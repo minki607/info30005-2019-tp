@@ -10,4 +10,27 @@
 <button id="style" onclick="js_new_style()">New style</button>
 </div>
 </body>
+
 </html>
+
+<script>
+
+    var previousColor = document.getElementById("text").style.color;
+
+    function js_new_style(){
+
+        var buttonText = "New style";
+        var color = previousColor; 
+
+        if (document.getElementById("style").innerHTML == "New Style")
+         {
+            buttonText = "Previous";
+            color = "Pink";
+            }
+
+            document.getElementById("style").innerHTML = buttonText;
+            document.getElementById("text").style.color = color;
+        }
+      
+</script>
+
